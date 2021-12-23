@@ -35,7 +35,7 @@ basic.forever(function () {
             # . # . #
             `)
         basic.pause(800)
-        if (!(input.isGesture(Gesture.Shake) || input.buttonIsPressed(Button.A)) || input.buttonIsPressed(Button.B)) {
+        if (!(input.isGesture(Gesture.Shake) || input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B))) {
             game.removeLife(1)
             timeswon += 1
         } else {
